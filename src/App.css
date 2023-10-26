@@ -1,0 +1,96 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  justify-content: space-around;
+  height: 4rem;
+}
+.nav{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  gap: 50px;
+  
+}
+.nav li{
+  color: #e7e7e7;
+  font-weight: 600;
+  list-style: none;
+  font-size: 20px;
+}
+
+/* MAIN */
+.hero{
+  display: flex;
+  background-color: #3d3d3d;
+  height: 23rem;
+  width: auto;
+  padding: 0;   /* Asegura que no hay relleno en el contenedor */
+  margin: 0;
+}
+.hero img{
+  height: 100%;
+  width: 50%;
+}
+.hero div.h2{
+  padding-left: 3%;
+  padding-right: 3%;
+  color: #e7e7e7;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero p{
+  font-weight: 600;
+}
+.spams{
+  display: flex;
+  justify-content: space-between;
+}
+section h3{
+  
+  color: #e7e7e7;
+}
+section {
+  padding-left: 1em;
+  background-color: #e7e7e7;
+}
+.movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(180px,1fr)) ;
+  
+  row-gap: 1em;
+}
+.movies img{
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.hovered{
+  position: absolute;
+
+}
+
+
+.poster-path {
+  transition: none;
+   /* Transición para la clase base */
+}
+
+.poster-path:hover {
+  transform: scale(1.1); /* Transformación al hacer hover */
+  transition: transform 0.4s ease-in-out; /* Anulamos la transición durante el hover */
+}
+.hover{
+  display: block;
+  position: inherit;
+}
+.nohover{
+  display: none;
+}
